@@ -37,15 +37,15 @@ gulp.task('scripts', function (){
   .pipe(gulp.dest('dist/js'));
 });
 //
-// // ////////////////////
-// // Images Tasks
-// // ////////////////////
-// gulp.task('image', function(){
-//   gulp.src('src/img/*')
-//   .pipe(imagemin())
-//   .pipe(gulp.dest('dist/img'));
-// });
-//
+// ////////////////////
+// Images Tasks
+// ////////////////////
+gulp.task('image', function(){
+  gulp.src('src/img/*')
+  // .pipe(imagemin())
+  .pipe(gulp.dest('dist/img'));
+});
+
 // // ////////////////////
 // // Fonts Task
 // // ////////////////////
@@ -75,4 +75,4 @@ gulp.task('serve', ['styles'], function(){
 // ////////////////////
 // Default Tasks
 // ////////////////////
-gulp.task('default', ['html', 'styles', 'scripts', 'serve']);
+gulp.task('default', ['html', 'styles', 'image', 'scripts', 'serve']);

@@ -23,11 +23,11 @@ html {
  * Basic styles for links
  */
 a {
-  color: $primary-color;
+  color: $text-color;
   text-decoration: none;
   @include on-event {
     color: $text-color;
-    text-decoration: underline;
+    text-decoration: none;
   }
 }
 /**
@@ -35,6 +35,23 @@ a {
  */
 button {
   border: none;
-  outline:none;
+  outline: none;
   text-decoration: none;
+}
+
+ol,
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+::selection {
+  background-color: $accent-color;
+  color: $text-color;
+}
+
+::-moz-selection {
+  background-color: $accent-color;
+  color: $text-color;
 }

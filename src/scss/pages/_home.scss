@@ -1,3 +1,47 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+.text-center {
+  text-align: center;
+}
+
+
+.sidebar {
+  width: 300px;
+  background-color: $background-dark;
+  position: fixed;
+  margin-top: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  overflow: auto;
+}
+
+.logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+}
+.logo a {
+  display: inline-block;
+}
+
+.doc-layout {
+  display: flex;
+  margin: 0 0 0 300px;
+  justify-content: left;
+  padding: 60px 0 60px 60px;
+}
+
+// .content {
+//   flex: 1;
+// }
+
+.links a {
+  color: #FFFFFF;
+  display: inline-block;
+}
+
+.links li {
+  position: relative;
+}

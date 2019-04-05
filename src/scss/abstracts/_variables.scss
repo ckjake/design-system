@@ -10,9 +10,9 @@ $text-font-stack: $font-name, sans-serif !default;
 
 /// Copy text color
 /// @type Color
+$eerie-black:      #141517 !default;
 $text-color:       #262730 !default;
-$dark-grey:        #2b2b2b !default;
-
+$dark-grey:        $eerie-black;
 /// Primary color
 /// @type Color
 $ultramarina-blue: #446DF6 !default;
@@ -21,12 +21,15 @@ $gunmetal:         #2D3047 !default;
 $arsenic:          #3F3047 !default;
 $prussian-blue:    #003459 !default;
 $halaya-ube:       #69385C !default;
-$primary-color:    $halaya-ube;
+$deep-komaru:      #2F3061 !default;
+$jet:              #343434 !default;
+$mikado-yellow:    #F9C80E !default;
 
+$primary-color:    $deep-komaru;
 
 /// Accent color
 /// @type Color
-$accent-color:     $halaya-ube;
+$accent-color:     $mikado-yellow;
 
 /// Hover color
 /// @type Color
@@ -34,7 +37,7 @@ $primary-hover-color: darken($primary-color, 15%);
 $accent-hover-color:  darken($accent-color, 15%);
 
 
-$background-dark:  $dark-gunmetal;
+$background-dark:  #141517 !default;
 $background-light: #fafafa !default;
 /// Container's maximum width
 /// @type Length

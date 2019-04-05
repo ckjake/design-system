@@ -425,11 +425,11 @@ html {
  * Basic styles for links
  */
 a {
-  color: #69385C;
+  color: #262730;
   text-decoration: none; }
   a:hover, a:active, a:focus {
     color: #262730;
-    text-decoration: underline; }
+    text-decoration: none; }
 
 /**
  * Basic style for buttons
@@ -438,6 +438,20 @@ button {
   border: none;
   outline: none;
   text-decoration: none; }
+
+ol,
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+::selection {
+  background-color: #F9C80E;
+  color: #262730; }
+
+::-moz-selection {
+  background-color: #F9C80E;
+  color: #262730; }
 
 @font-face {
   font-family: "Hanken Grotesk";
@@ -481,7 +495,11 @@ button {
 body {
   color: #262730;
   font: normal normal normal 1rem/1.6 "Hanken Grotesk", sans-serif;
-  background-color: #FFFFFF; }
+  text-rendering: optimizeLegibility; }
+
+a {
+  font-size: 0.875rem;
+  font-weight: 500; }
 
 p {
   font-size: 1rem;
@@ -489,7 +507,7 @@ p {
 
 h1 {
   font-size: 3rem;
-  font-weight: 800; }
+  font-weight: 700; }
 
 /**
  * Clear inner floats
@@ -546,13 +564,28 @@ h1 {
   position: absolute;
   width: 1px; }
 
+.d-flex {
+  display: flex; }
+
+.pv2 {
+  padding-top: 8px;
+  padding-bottom: 8px; }
+
+.pv3 {
+  padding-top: 16px;
+  padding-bottom: 16px; }
+
+.ph4 {
+  padding-left: 24px;
+  padding-right: 24px; }
+
 .button,
 button {
   -webkit-appearance: none;
   display: inline-block;
   border: 1px solid;
   border-radius: 2px;
-  background: #69385C;
+  background: #2F3061;
   color: #ffffff;
   font-weight: 700;
   font-family: "Hanken Grotesk", sans-serif;
@@ -567,14 +600,52 @@ button {
   line-height: 1; }
 
 .btn-primary {
-  background: #69385C;
-  border-color: #69385C; }
+  background: #2F3061;
+  border-color: #2F3061; }
 
 .btn-accent {
-  background: #69385C;
-  border-color: #69385C; }
+  background: #F9C80E;
+  color: #343434;
+  border-color: #F9C80E; }
 
 .btn-outline {
   background: transparent;
   border: 1px solid #262730;
   color: #262730; }
+
+.text-center {
+  text-align: center; }
+
+.sidebar {
+  width: 300px;
+  background-color: #141517;
+  position: fixed;
+  margin-top: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  overflow: auto; }
+
+.logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 24px; }
+
+.logo a {
+  display: inline-block; }
+
+.doc-layout {
+  display: flex;
+  margin: 0 0 0 300px;
+  justify-content: left;
+  padding: 60px 0 60px 60px; }
+
+.links a {
+  color: #FFFFFF;
+  display: inline-block; }
+
+.links li {
+  position: relative; }
+
+body {
+  background-color: #fafafa; }

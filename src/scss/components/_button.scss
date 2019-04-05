@@ -1,0 +1,40 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+.button,
+button {
+  -webkit-appearance: none;
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 2px;
+  background: $primary-color;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: $text-font-stack;
+  font-size: 0.875rem;
+  text-transform: none;
+  padding: 0.875rem 1rem;
+  margin: 0 0 1rem;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.btn-primary {
+  background: $primary-color;
+  border-color: $primary-color;
+}
+
+.btn-accent {
+  background: $accent-color;
+  border-color: $accent-color;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid $text-color;
+  color: $text-color;
+}

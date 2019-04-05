@@ -1,1 +1,1 @@
-# a HTML and SCSS Boilerplate
+# design-system
